@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nozama</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.min.css">
+    <meta name="theme-color" content="#fff" />
+    <link rel="manifest" href="functions/manifest.json">
+    <link href="assets/favicon.ico" rel="icon" sizes="192x192">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/512x512.png">
+    <link rel="stylesheet" href="styles/cookie.css">
+    <script defer src="js/data.js" charset="utf-8"></script>
+    <script defer src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <nav id="top">
+                <div class="topbar">
+                    <!-- menu icon -->
+                    <svg class="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path
+                            d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z" />
+                    </svg>
+                    <!-- logo -->
+                    <img src="img/nozama-logo-white.png" alt="nozama">
+                    <!-- search bar -->
+                    <div class="search">
+                        <svg class="search-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z" />
+                            <path
+                                d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        </svg>
+                        <input id="myinput" type="text" placeholder="Search Products" tabindex="-1">
+                        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            <path d="M0 0h24v24H0z" fill="none" /></svg>
+                    </div>
+                    <!-- login -->
+                    <span>Sign Up | Sign In</span>
+                </div>
+                <!-- filter links -->
+                <ul class="link-list">
+                    <li class="selected">New-Releases</li>
+                    <li>Sale</li>
+                    <li>Electronics</li>
+                    <li>Food</li>
+                    <li>Clothes</li>
+                    <li>Best-Sellers</li>
+                    <li>Gift-Cards</li>
+                    <li>Customer Service</li>
+                    <li>Sell</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main content -->
+        <main></main>
+        <!-- footer -->
+        <footer id="bottom">
+            Copyright @ 2023, Nozama.com, Inc.
+        </footer>
+  
+        <div class="cookie-consent-modal">
+            <div class="content">
+                <img class="cookie_img" src="img/cookie.png" alt="cookie">
+                <h1>Allow Cookies</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum saepe beatae amet iure ipsam, officia exercitationem nam nemo autem? Nam harum, aut libero sapiente quae numquam amet distinctio doloremque, rem reiciendis quas dolorem autem ipsam odio deserunt illo cumque voluptates perferendis! Ipsa voluptatum adipisci exercitationem. Tempora, impedit? Hic, ex accusantium.</p>
+                <div class="btns">
+                    <button class="btn cancel">cancel</button>
+                    <button class="btn accept">accept</button>
+                </div>
+            </div>
+        </div>
+        <!-- cookie -->
+    </div>
+    <!-- cart -->
+    <div class="cart">
+        <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+            <path d="M0 0h24v24H0z" fill="none" /></svg>
+        <svg class="closeCart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+        <span class="item-counter">0</span>
+
+        <div class="cart-items">
+            <h1 class="cartHeading">Cart</h1>
+        </div>
+        <br><br><br>
+        <hr>
+        <h1 class="cartHeading">Checkout</h1>
+        <form class="checkoutForm">
+            <input type="text" placeholder="First Name" required>
+            <input type="Text" placeholder="Last Name" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Province" required>
+            <input type="text" placeholder="Country" required>
+
+            <input type="tel" placeholder="Card Holder Name" required>
+            <input type="Text" placeholder="Card No" required>
+            <input type="Text" placeholder="CVV" required>
+            <input type="month" placeholder="Expiration Date" required>
+            <h1>Total :</h1>
+            <h1 class="total"></h1>
+            <input class="reset" type="reset" value="Reset"> <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- fab -->
+    <a id="hook" href="#bottom" tabindex="-1">
+        <div class="fab" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                <path fill="none" d="M0 0h24v24H0V0z" />
+            </svg>
+        </div>
+    </a>
+    <!-- side nav menu -->
+    <nav class="side-nav">
+        <div class="header">
+            <div class="nav-pic">
+                <img src="assets/head_paper.png" alt="" class="product-logo">
+            </div>
+            <div class="nav-heading">
+                <h1 class="title"></h1>
+                <a href="">
+                    <h1 class="email"></h1>
+                </a>
+            </div>
+
+        </div>
+        <!-- navigation menu -->
+        <ul class="nav-menu">
+            <li class="menu-item signin">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                        d="M10 32c0 7.73 6.27 14 14 14s14-6.27 14-14v-8H10v8zM32.25 8.74l4.2-4.2-1.65-1.65-4.61 4.61C28.31 6.57 26.23 6 24 6c-2.23 0-4.31.57-6.19 1.5L13.2 2.89l-1.65 1.65 4.2 4.2C12.28 11.28 10 15.36 10 20v2h28v-2c0-4.64-2.28-8.72-5.75-11.26zM18 18c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2zm12 0c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2z" />
+                </svg>
+                <h1 class="list-item-title">Sign In/ Sign Up</h1>
+            </li>
+
+            <li class="menu-item menu-cart">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                        d="M10 32c0 7.73 6.27 14 14 14s14-6.27 14-14v-8H10v8zM32.25 8.74l4.2-4.2-1.65-1.65-4.61 4.61C28.31 6.57 26.23 6 24 6c-2.23 0-4.31.57-6.19 1.5L13.2 2.89l-1.65 1.65 4.2 4.2C12.28 11.28 10 15.36 10 20v2h28v-2c0-4.64-2.28-8.72-5.75-11.26zM18 18c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2zm12 0c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2z" />
+                </svg>
+                <h1 class="list-item-title">Cart</h1>
+            </li>
+            <li class="menu-item contact">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                        d="M10 32c0 7.73 6.27 14 14 14s14-6.27 14-14v-8H10v8zM32.25 8.74l4.2-4.2-1.65-1.65-4.61 4.61C28.31 6.57 26.23 6 24 6c-2.23 0-4.31.57-6.19 1.5L13.2 2.89l-1.65 1.65 4.2 4.2C12.28 11.28 10 15.36 10 20v2h28v-2c0-4.64-2.28-8.72-5.75-11.26zM18 18c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2zm12 0c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2z" />
+                </svg>
+                <h1 class="list-item-title">Contact Us</h1>
+            </li>
+            <li class="menu-item findUs">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                        d="M10 32c0 7.73 6.27 14 14 14s14-6.27 14-14v-8H10v8zM32.25 8.74l4.2-4.2-1.65-1.65-4.61 4.61C28.31 6.57 26.23 6 24 6c-2.23 0-4.31.57-6.19 1.5L13.2 2.89l-1.65 1.65 4.2 4.2C12.28 11.28 10 15.36 10 20v2h28v-2c0-4.64-2.28-8.72-5.75-11.26zM18 18c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2zm12 0c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2z" />
+                </svg>
+                <h1 class="list-item-title">Find Us</h1>
+            </li>
+
+            <li class="menu-item logout" style="display:none">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                        d="M10 32c0 7.73 6.27 14 14 14s14-6.27 14-14v-8H10v8zM32.25 8.74l4.2-4.2-1.65-1.65-4.61 4.61C28.31 6.57 26.23 6 24 6c-2.23 0-4.31.57-6.19 1.5L13.2 2.89l-1.65 1.65 4.2 4.2C12.28 11.28 10 15.36 10 20v2h28v-2c0-4.64-2.28-8.72-5.75-11.26zM18 18c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2zm12 0c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2z" />
+                </svg>
+                <h1 class="list-item-title">Log Out</h1>
+            </li>
+        </ul>
+    </nav>
+    <!-- productInfo -->
+    <div class="product-info"></div>
+    <!-- login form -->
+    <div class="login">
+        <form class="login-form">
+            <h2>Log In</h2><br>
+            <label for="">Username or Email</label><br>
+            <input class="inputLogin" type="text" autocomplete="username" required><br>
+            <label for="">Password</label><br>
+            <input class="inputPassword" type="password" autocomplete="current-password" required><br>
+            <button type="submit" name="button">Submit</button>
+        </form>
+        <div class="signup-form">
+            <h2>Sign Up</h2><br>
+            <label for="">Username or Email</label><br>
+            <input type="text" autocomplete="username"><br>
+            <label for="">Password</label><br>
+            <input type="password" autocomplete="current-password"><br>
+            <button type="submit" name="button">Submit</button>
+        </div>
+
+        <div class="account-info" style="display:none">
+            <h2>User Info</h2><br>
+            <label for="">User Name</label><br>
+            <span class="name">Test</span><br><br>
+            <label for="">Phone No.</label><br>
+            <span class="mobile">Test</span><br><br>
+            <label for="">Email</label><br>
+            <span class="email">Test</span><br><br>
+            <button class="logoutBtn">Log Out</button>
+        </div>
+        <h1 class="LoggedOut">Sign Up</h1>
+        <h1 class="LoggedIn" style="display:none">Account Info</h1>
+    </div>
+
+    <div class="contactUs">
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero veniam minus sint exercitationem autem
+            eveniet odio, neque repudiandae sunt magnam recusandae excepturi. Magnam eos rem distinctio dolor,
+            recusandae voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut quaerat possimus
+            tenetur laudantium officiis, maiores eligendi, veritatis, optio molestiae dolorem illo. Recusandae
+            dignissimos, quidem quaerat voluptates amet nulla magniorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero veniam minus sint exercitationem autem
+            eveniet odio, neque repudiandae sunt magnam recusandae excepturi. Magnam eos rem distinctio dolor,
+            recusandae voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut quaerat possimus
+            tenetur laudantium officiis, maiores eligendi, veritatis, optio molestiae dolorem illo. Recusandae
+            dignissimos, quidem quaerat voluptates amet nulla magniorem</p>
+    </div>
+    <div class="findUsMap">
+        <h1>Find Us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510492.2304438234!2d42.236637293460774!3d42.317356464174566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x4f907964122d4ac2!2sGeorgia!5e0!3m2!1sen!2sge!4v1676562832480!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="tooltip"></div>
+
+</body>
+
+</html>
