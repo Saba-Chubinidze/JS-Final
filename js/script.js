@@ -14,7 +14,7 @@ product.forEach(product => {
     const card = `
     <div class="card ${category}">
     <img src="${product.imgSrc}" alt="${product.name}" onerror="this.src='assets/head_paper.png'" loading="lazy">
-    <a><h2> $${product.price} CAD </h2>
+    <a><h2> $${product.price} USD </h2>
     <h1>${product.name}</h1></a>
     <button> ADD TO CART </button>
     </div>
@@ -318,7 +318,7 @@ for (let i = 0; i < cards.length; i++) {
                 <path d="M0 0h24v24H0z" fill="none" /></svg>
                 <img src='${product.imgSrc}'>
                 <h2>${product.name}</h2>
-                <h1>$${product.price} CAD</h1>
+                <h1>$${product.price} USD</h1>
                 <h5>${categories}</h5>
                 `;
 
@@ -482,7 +482,7 @@ for (let i = 0; i < buttons.length; i++) {
 
         total += +price;
 
-        $('.total').innerText = "$" + total + " CAD";
+        $('.total').innerText = "$" + total + " USD";
 
         $('.cart span').style.transform = 'rotate(0deg)'
 
@@ -502,7 +502,7 @@ for (let i = 0; i < buttons.length; i++) {
                 price = button.parentElement.querySelector('h1.item-price').innerText;
                 price = price.substring(1, price.length - 3);
                 total -= +price;
-                $('.total').innerText = "$" + total + " CAD";
+                $('.total').innerText = "$" + total + " USD";
             }
         });
         $('.cart span').innerText = counter;
@@ -699,7 +699,7 @@ $('.checkoutForm').onsubmit = (event) => {
         price = button.parentElement.querySelector('h1.item-price').innerText;
         price = price.substring(1, price.length - 3);
         total -= +price;
-        $('.total').innerText = "$" + total + " CAD";
+        $('.total').innerText = "$" + total + " USD";
         $('.cart span').innerText = counter;
         window.location.href = 'index.html';
     })
